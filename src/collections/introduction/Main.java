@@ -8,5 +8,6 @@ public class Main {
         numbers.add(30);
         System.out.println(numbers);
         numbers.remove(2);System.out.println(numbers);
+
     }
 }
