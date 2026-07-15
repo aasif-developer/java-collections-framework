@@ -1,8 +1,7 @@
 package collections.introduction;
-
 import java.util.*;
-
-public class Main {
+public class ListIntro
+{
 
     public static void main(String[] args) {
 
@@ -63,6 +62,36 @@ public class Main {
 
 
         // ============================
+        // LINKEDLIST SPECIFIC METHODS
+        // ============================
+
+        System.out.println("\n===== LINKEDLIST SPECIFIC METHODS =====");
+
+        // 1. DECLARATION
+        LinkedList<Integer> list = new LinkedList<>();
+
+        // 2. ADD ELEMENTS
+        list.add(20);
+        list.add(30);
+
+        // 3. ADD ELEMENT AT THE FIRST
+        list.addFirst(10);
+
+        // 4. ADD ELEMENT AT THE LAST
+        list.addLast(40);
+
+        // 5. DISPLAY THE LINKEDLIST
+        System.out.println(list);
+
+        // 6. GET THE FIRST ELEMENT
+        System.out.println(list.getFirst());
+
+        // 7. GET THE LAST ELEMENT
+        System.out.println(list.getLast());
+
+
+
+        // ============================
         // LIST - VECTOR
         // ============================
 
@@ -84,6 +113,34 @@ public class Main {
 
         // 5. GET THE CURRENT CAPACITY
         System.out.println(vector.capacity());
+
+
+
+        // ============================
+        // VECTOR SPECIFIC METHODS
+        // ============================
+
+        System.out.println("\n===== VECTOR SPECIFIC METHODS =====");
+
+        // 1. DECLARATION
+        Vector<Integer> vec = new Vector<>();
+
+        // 2. ADD ELEMENTS
+        vec.add(100);
+        vec.add(200);
+        vec.add(300);
+
+        // 3. DISPLAY THE VECTOR
+        System.out.println(vec);
+
+        // 4. DISPLAY THE FIRST ELEMENT
+        System.out.println(vec.firstElement());
+
+        // 5. DISPLAY THE LAST ELEMENT
+        System.out.println(vec.lastElement());
+
+        // 6. DISPLAY THE CAPACITY
+        System.out.println(vec.capacity());
 
 
 
@@ -116,92 +173,30 @@ public class Main {
 
 
         // ============================
-        // SET - HASHSET
+        // STACK SPECIFIC METHODS
         // ============================
 
-        System.out.println("\n===== HASHSET =====");
+        System.out.println("\n===== STACK SPECIFIC METHODS =====");
 
         // 1. DECLARATION
-        Set<Integer> hashSet = new HashSet<>();
+        Stack<Integer> stk = new Stack<>();
 
-        // 2. ADD ELEMENTS (Duplicates are ignored)
-        hashSet.add(30);
-        hashSet.add(10);
-        hashSet.add(20);
-        hashSet.add(10);
+        // 2. PUSH ELEMENTS
+        stk.push(100);
+        stk.push(200);
+        stk.push(300);
 
-        // 3. DISPLAY THE HASHSET
-        System.out.println(hashSet);
+        // 3. DISPLAY THE STACK
+        System.out.println(stk);
 
-        // 4. CHECK IF AN ELEMENT EXISTS
-        System.out.println(hashSet.contains(20));
+        // 4. VIEW THE TOP ELEMENT
+        System.out.println(stk.peek());
 
-        // 5. REMOVE AN ELEMENT
-        hashSet.remove(20);
+        // 5. SEARCH FOR AN ELEMENT
+        System.out.println(stk.search(200));
 
-        // 6. DISPLAY THE UPDATED HASHSET
-        System.out.println(hashSet);
-
-
-
-        // ============================
-        // SET - LINKEDHASHSET
-        // ============================
-
-        System.out.println("\n===== LINKEDHASHSET =====");
-
-        // 1. DECLARATION
-        Set<Integer> linkedHashSet = new LinkedHashSet<>();
-
-        // 2. ADD ELEMENTS (Maintains insertion order)
-        linkedHashSet.add(30);
-        linkedHashSet.add(10);
-        linkedHashSet.add(20);
-        linkedHashSet.add(10);
-
-        // 3. DISPLAY THE LINKEDHASHSET
-        System.out.println(linkedHashSet);
-
-        // 4. CHECK IF AN ELEMENT EXISTS
-        System.out.println(linkedHashSet.contains(20));
-
-        // 5. REMOVE AN ELEMENT
-        linkedHashSet.remove(20);
-
-        // 6. DISPLAY THE UPDATED LINKEDHASHSET
-        System.out.println(linkedHashSet);
-
-
-
-        // ============================
-        // SET - TREESET
-        // ============================
-
-        System.out.println("\n===== TREESET =====");
-
-        // 1. DECLARATION
-        TreeSet<Integer> treeSet = new TreeSet<>();
-
-        // 2. ADD ELEMENTS (Automatically sorted)
-        treeSet.add(30);
-        treeSet.add(10);
-        treeSet.add(20);
-        treeSet.add(10);
-
-        // 3. DISPLAY THE TREESET
-        System.out.println(treeSet);
-
-        // 4. GET THE FIRST (SMALLEST) ELEMENT
-        System.out.println(treeSet.first());
-
-        // 5. GET THE LAST (LARGEST) ELEMENT
-        System.out.println(treeSet.last());
-
-        // 6. REMOVE AN ELEMENT
-        treeSet.remove(20);
-
-        // 7. DISPLAY THE UPDATED TREESET
-        System.out.println(treeSet);
+        // 6. CHECK WHETHER THE STACK IS EMPTY
+        System.out.println(stk.empty());
 
     }
 }

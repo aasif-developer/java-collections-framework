@@ -4,7 +4,6 @@ public class ArrayListMethods {
     public static void main(String[] args) {
         //CREATION OF ARRAY LIST
         List<Integer> num = new ArrayList<>();
-
         System.out.println("1.ADDING OF ELEMENTS TO THE ARRAY LIST");
         num.add(10);
         num.add(20);
