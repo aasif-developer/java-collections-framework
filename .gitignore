@@ -1,23 +1,41 @@
+# ==============================
 # IntelliJ IDEA
-../.idea/
+# ==============================
+
+.idea/
 *.iml
 
-# Build directories
+# ==============================
+# Build Directories
+# ==============================
+
 out/
 target/
 build/
 
-# Compiled Java files
+# ==============================
+# Compiled Java Files
+# ==============================
+
 *.class
 
-# Logs
+# ==============================
+# Log Files
+# ==============================
+
 *.log
 
-# Package files
+# ==============================
+# Package Files
+# ==============================
+
 *.jar
 *.war
 *.ear
 
-# OS files
+# ==============================
+# Operating System Files
+# ==============================
+
 .DS_Store
 Thumbs.db
