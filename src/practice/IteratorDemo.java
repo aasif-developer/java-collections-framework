@@ -1,4 +1,5 @@
 package practice;
+
 import java.util.ArrayList;
 import java.util.Iterator;
 
@@ -66,6 +67,34 @@ public class IteratorDemo {
             System.out.println(name);
 
         }
+
+
+        /*============================================================
+          REMOVE USING ITERATOR
+        ============================================================
+
+        remove() removes the last element returned by next().
+
+        It is the safe way to remove elements while
+        traversing a Collection.
+
+        */
+
+        Iterator<String> removeIterator = names.iterator();
+
+        while (removeIterator.hasNext()) {
+
+            String name = removeIterator.next();
+
+            if (name.equals("Rahul")) {
+
+                removeIterator.remove();
+
+            }
+
+        }
+
+        System.out.println("\nAfter Removing Rahul : " + names);
 
     }
 }
