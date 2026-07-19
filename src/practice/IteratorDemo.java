@@ -18,67 +18,87 @@ public class IteratorDemo {
         ArrayList, LinkedList, HashSet, etc.
 
         Iterator provides methods like:
+        - iterator()
         - hasNext()
         - next()
         - remove()
 
         */
 
-        // Creating an ArrayList
+
+        //============================================================
+        // CREATING AN ARRAYLIST
+        //============================================================
 
         ArrayList<String> names = new ArrayList<>();
 
 
-        // Adding elements to the ArrayList
+        // Adding elements
 
         names.add("Aasif");
         names.add("Rahul");
         names.add("John");
 
 
-        /*============================================================
-          CREATING AN ITERATOR
-        ============================================================
+        // Displaying the original ArrayList
 
-        iterator() returns an Iterator object.
+        System.out.println("Original List : " + names);
+        System.out.println();
 
-        This object is used to traverse the Collection.
 
-        */
+
+        //============================================================
+        // CREATING AN ITERATOR
+        //============================================================
+
+        // iterator() returns an Iterator object
+        // which is used to traverse the Collection.
 
         Iterator<String> iterator = names.iterator();
 
 
-        /*============================================================
-          TRAVERSING USING ITERATOR
-        ============================================================
 
-        hasNext() checks whether another element is present.
+        //============================================================
+        // hasNext()
+        //============================================================
 
-        next() returns the next element and moves the
-        Iterator to the next position.
+        // Checks whether another element is available.
 
-        */
+        System.out.println("Has Next Element : " + iterator.hasNext());
+        System.out.println();
+
+
+
+        //============================================================
+        // next()
+        //============================================================
+
+        // next() returns the next element and
+        // moves the Iterator to the next position.
+
+        System.out.println("Traversing using Iterator");
 
         while (iterator.hasNext()) {
 
             String name = iterator.next();
 
-            System.out.println(name);
+            System.out.println("Current Element : " + name);
 
         }
 
+        System.out.println();
 
-        /*============================================================
-          REMOVE USING ITERATOR
-        ============================================================
 
-        remove() removes the last element returned by next().
 
-        It is the safe way to remove elements while
-        traversing a Collection.
+        //============================================================
+        // remove()
+        //============================================================
 
-        */
+        // remove() removes the last element
+        // returned by next().
+
+        // It is the safe way to remove elements
+        // while traversing a Collection.
 
         Iterator<String> removeIterator = names.iterator();
 
@@ -94,7 +114,16 @@ public class IteratorDemo {
 
         }
 
-        System.out.println("\nAfter Removing Rahul : " + names);
+        System.out.println("After Removing Rahul : " + names);
+        System.out.println();
+
+
+
+        //============================================================
+        // hasNext() AFTER TRAVERSAL
+        //============================================================
+
+        System.out.println("Has Next Element : " + removeIterator.hasNext());
 
     }
 }
