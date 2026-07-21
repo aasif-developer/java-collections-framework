@@ -17,8 +17,16 @@ class Student implements Comparable<Student> {
 
 
     /*============================================================
-      compareTo()
+      compareTo() METHOD
     ============================================================
+
+    Syntax:
+
+    public int compareTo(Student other) {
+
+        return this.id - other.id;
+
+    }
 
     compareTo() defines the natural sorting order
     of objects.
@@ -94,8 +102,24 @@ public class ComparableDemo {
 
 
         //============================================================
-        // SORTING USING COMPARABLE
+        // Collections.sort() METHOD
         //============================================================
+
+        /*
+
+        Syntax:
+
+        Collections.sort(collectionName);
+
+        Example:
+
+        Collections.sort(students);
+
+        Collections.sort() sorts the elements
+        in their natural order by calling
+        compareTo() internally.
+
+        */
 
         Collections.sort(students);
 
