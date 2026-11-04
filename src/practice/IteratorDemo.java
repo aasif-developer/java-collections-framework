@@ -54,7 +54,7 @@ public class IteratorDemo {
         // iterator() returns an Iterator object
         // which is used to traverse the Collection.
 
-        Iterator<String> iterator = names.iterator();
+        Iterator<String> it = names.iterator();
 
 
 
@@ -64,7 +64,7 @@ public class IteratorDemo {
 
         // Checks whether another element is available.
 
-        System.out.println("Has Next Element : " + iterator.hasNext());
+        System.out.println("Has Next Element : " + it.hasNext());
         System.out.println();
 
 
@@ -78,9 +78,9 @@ public class IteratorDemo {
 
         System.out.println("Traversing using Iterator");
 
-        while (iterator.hasNext()) {
+        while (it.hasNext()) {
 
-            String name = iterator.next();
+            String name = it.next();
 
             System.out.println("Current Element : " + name);
 
