@@ -37,5 +37,9 @@ public class IteratorRevise {
         {
             System.out.println(names);
         }
+        for(Integer it2 : li)
+        {
+            System.out.println(it2);
+        }
     }
 }
