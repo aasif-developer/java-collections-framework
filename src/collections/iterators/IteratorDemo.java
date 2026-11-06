@@ -28,14 +28,19 @@ public class IteratorDemo {
         // Traversing the Collection
         // hasNext() -> Checks if next element exists.
         // next() -> Returns the next element.
-
+        System.out.println("1.ITERATING USING ITERABLE INTERFACE");
         while (iterator.hasNext()) {
 
             String name = iterator.next();
 
             System.out.println(name);
+        }
+            System.out.println("2.ITERATING USING ENHANCED FOR LOOP(for each loop)");
+            for(String name1 : names)
+            {
+                System.out.println(name1);
+            }
 
         }
 
     }
-}
