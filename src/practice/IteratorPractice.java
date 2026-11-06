@@ -1,9 +1,7 @@
 package practice;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-
-public class IteratorDemo {
+import java.util.*;
+public class IteratorPractice {
 
     public static void main(String[] args) {
 
@@ -124,6 +122,59 @@ public class IteratorDemo {
         //============================================================
 
         System.out.println("Has Next Element : " + removeIterator.hasNext());
+        //-------------------------------------------------------------------------//
+
+        System.out.println("MAP EXAMPLE");
+
+        Map<Integer, String> students = new HashMap<>();
+
+        students.put(1, "Aasif");
+        students.put(2, "Rahul");
+        students.put(3, "John");
+
+// Creating an Iterator
+
+        Iterator<Map.Entry<Integer, String>> iterator =
+                students.entrySet().iterator();
+
+// Traversing the Map
+
+        while (iterator.hasNext()) {
+
+            Map.Entry<Integer, String> entry = iterator.next();
+
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+        //-------------------------------------------------------------------------//
+
+            // Creating an Iterator for Keys
+
+            Iterator<Integer> keyIterator = students.keySet().iterator();
+
+// Traversing Keys
+
+            while (keyIterator.hasNext()) {
+
+                Integer key = keyIterator.next();
+
+                System.out.println(key);
+
+            }
+        //-------------------------------------------------------------------------//
+
+        // Creating an Iterator for Values
+
+        Iterator<String> valueIterator = students.values().iterator();
+
+// Traversing Values
+
+        while (valueIterator.hasNext()) {
+
+            String value = valueIterator.next();
+
+            System.out.println(value);
+
+        }
+        }
 
     }
-}
