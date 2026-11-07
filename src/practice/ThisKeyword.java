@@ -1,7 +1,4 @@
 package practice;
-
-import java.sql.SQLOutput;
-
 public class ThisKeyword {
     int age = 20;
 

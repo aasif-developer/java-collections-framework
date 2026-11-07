@@ -2,7 +2,6 @@ package collections.introduction;
 import java.util.*;
 public class QueueIntro
 {
-
     public static void main(String[] args) {
 
         // ============================

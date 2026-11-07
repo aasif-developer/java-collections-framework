@@ -1,5 +1,4 @@
 package practice;
-import java.sql.SQLOutput;
 import java.util.*;
 public class IteratorRevise {
     public static void main(String[] args) {

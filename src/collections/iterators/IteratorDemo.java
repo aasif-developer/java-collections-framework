@@ -1,8 +1,6 @@
 package collections.iterators;
-
 import java.util.ArrayList;
 import java.util.Iterator;
-
 public class IteratorDemo {
 
     public static void main(String[] args) {
