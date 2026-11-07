@@ -24,7 +24,20 @@ public class ListIteratorDemo {
         {
             System.out.println(lit.previous());
         }
-
+        //Traversal from a particular index
+        System.out.println();
+        ListIterator<Integer> a = li.listIterator(3);
+        System.out.println();
+        while(a.hasPrevious())
+        {
+            System.out.println(a.previous());
+        }
+        System.out.println();
+        ListIterator<Integer> b = li.listIterator(3);
+        while(b.hasNext())
+        {
+            System.out.println(b.next());
+        }
 
     }
 }
