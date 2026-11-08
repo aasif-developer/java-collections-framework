@@ -1,4 +1,4 @@
-package collections.list.queue;
+package collections.queue;
 import java.util.*;
 public class QueueMethods {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package collections.practice;
+package practice;
 import java.util.*;
 public class IteratorRevise {
     public static void main(String[] args) {

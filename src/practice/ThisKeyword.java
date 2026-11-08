@@ -1,4 +1,4 @@
-package collections.practice;
+package practice;
 public class ThisKeyword {
     int age = 20;
 

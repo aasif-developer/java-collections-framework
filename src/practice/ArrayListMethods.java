@@ -1,4 +1,4 @@
-package collections.practice;
+package practice;
 import java.util.*;
 public class ArrayListMethods {
     public static void main(String[] args) {
