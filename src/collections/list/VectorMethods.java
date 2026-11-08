@@ -48,5 +48,13 @@ public class VectorMethods {
         //10. remove all elements
         v.clear();
         System.out.println(v);
+
+        Vector<Integer> vi = new Vector<>();
+
+        System.out.println(vi.size());
+        vi.add(100);
+        vi.add(200);
+        System.out.println(vi.size());
+        System.out.println(vi.capacity());
     }
 }
