@@ -1,4 +1,4 @@
-package practice;
+package collections.practice;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -95,7 +95,7 @@ public class ComparableDemo {
         students.add(new Student(102));
 
 
-        // Displaying the original list
+        // Displaying the original collections.list
 
         System.out.println("Before Sorting : " + students);
         System.out.println();
@@ -124,7 +124,7 @@ public class ComparableDemo {
         Collections.sort(students);
 
 
-        // Displaying the sorted list
+        // Displaying the sorted collections.list
 
         System.out.println("After Sorting : " + students);
 

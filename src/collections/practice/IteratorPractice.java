@@ -1,4 +1,4 @@
-package practice;
+package collections.practice;
 import java.util.*;
 public class IteratorPractice {
 

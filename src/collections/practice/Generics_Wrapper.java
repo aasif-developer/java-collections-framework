@@ -1,4 +1,4 @@
-package practice;
+package collections.practice;
 import java.util.ArrayList;
 public class Generics_Wrapper
 {

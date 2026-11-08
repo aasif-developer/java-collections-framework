@@ -1,4 +1,4 @@
-package collections.arraylist;
+package collections.list.arraylist;
 import java.util.*;
 public class ArrayListMethods {
     public static void main(String[] args) {
