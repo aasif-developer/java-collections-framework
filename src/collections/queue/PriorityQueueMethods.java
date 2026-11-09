@@ -27,12 +27,12 @@ public class PriorityQueueMethods {
         pq1.offer(20);
         pq1.offer(30);
 
-////1. create Iterator
-//        Iterator<Integer> it1 = pq1.iterator();
-//
-////2. traverse elements
-//        while (it1.hasNext()) {
-//            System.out.println(it1.next());
-//        }
+//1. create Iterator
+        Iterator<Integer> it1 = pq1.iterator();
+
+//2. traverse elements
+        while (it1.hasNext()) {
+            System.out.println(it1.next());
+        }
     }
 }
