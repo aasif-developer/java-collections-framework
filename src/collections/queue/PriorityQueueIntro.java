@@ -1,13 +1,8 @@
 package collections.queue;
-
 import java.util.*;
-
 public class PriorityQueueIntro {
     public static void main(String[] args) {
-
-
         Queue<String> qt = new PriorityQueue<>();
-
         qt.offer("AASIF");
         qt.offer("DSA");
         qt.offer("MASTER");

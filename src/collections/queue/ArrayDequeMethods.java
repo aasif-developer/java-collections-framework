@@ -2,7 +2,6 @@ package collections.queue;
 import java.util.*;
 public class ArrayDequeMethods {
     public static void main(String[] args) {
-
         Deque<Integer> dq = new ArrayDeque<>();
 
         // METHODS THAT WILL NOT CAUSE EXCEPTION IF DEQUE IS EMPTY
