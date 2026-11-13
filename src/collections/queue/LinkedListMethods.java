@@ -1,6 +1,6 @@
 package collections.queue;
 import java.util.*;
-public class QueueMethods {
+public class LinkedListMethods {
     public static void main(String[] args) {
         Queue<Integer> qt= new LinkedList<>();
         //methods that will not cause EXCEPTION if the queue is EMPTY
