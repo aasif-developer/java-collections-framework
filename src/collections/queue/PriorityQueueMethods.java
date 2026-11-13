@@ -13,7 +13,6 @@ public class PriorityQueueMethods {
         pq.offer(10);
         pq.offer(30);
         pq.offer(5);
-
         System.out.println(pq);  //representation of internal heap
 
         System.out.println("1.PRIORITY : SMALLER NUMBER HAS HIGHER PRIORITY[eg:RANK]");

@@ -33,7 +33,6 @@ public class ArrayDequeMethods {
         dq.removeFirst();         //10. remove element from front
         dq.removeLast();          //11. remove element from rear
         dq.pop();                 //12. remove element from front
-
         System.out.println(dq);
 
         System.out.println(dq.getFirst());  //13. return front element
