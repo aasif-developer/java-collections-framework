@@ -20,16 +20,29 @@ public class PriorityQueueMethods {
 
         System.out.println(pq.poll());
         System.out.println(pq);
-        while(pq.isEmpty())
+        String rank="";
+        while(!pq.isEmpty())
         {
-            System.out.println(pq.poll());  //poll - returns the top most element
+            System.out.println(pq.poll()); //poll - returns the top most element
         }
+        System.out.println(pq);
 
         System.out.println("2.PRIORITY : LARGER NUMBER HAS HIGHER PRIORITY");
 
+        pq=new PriorityQueue<>(Collections.reverseOrder());     //to set priority as descending order
+        pq.offer(90);
+        pq.offer(80);
+        pq.offer(110);
+        pq.offer(100);
+        pq.offer(120);
 
+        System.out.println(pq);  //representation of internal heap
 
-
+        while(!pq.isEmpty())
+        {
+            System.out.println(pq.poll());
+        }
+        System.out.println(pq);
 
     }
 }
