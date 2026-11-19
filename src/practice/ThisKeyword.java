@@ -1,7 +1,6 @@
 package practice;
 public class ThisKeyword {
     int age = 20;
-
     public void display() {
         int age = 7;
         System.out.println(age);
@@ -13,7 +12,6 @@ public class ThisKeyword {
             System.out.println(age);
             System.out.println(this.age);
         }
-
     public static void main(String[] args) {
         ThisKeyword s1 = new ThisKeyword();
         ThisKeyword s2 = new ThisKeyword();
