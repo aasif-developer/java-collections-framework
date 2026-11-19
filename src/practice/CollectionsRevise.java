@@ -72,5 +72,31 @@ public class CollectionsRevise {
             System.out.println(lit.previous());
         }
 
+
+        //even priority
+
+        Comparator<Integer> comp = (a,b)->
+        {
+            if(a%2==0 && b%2!=0)
+            {
+                return -1;
+            }
+            if(a%2!=0 && b%2==0)
+            {
+                return 1;
+            }
+            return Integer.compare(a,b);
+        };
+
+        PriorityQueue<Integer> pt = new PriorityQueue<>(comp);
+
+        pt.offer(10);
+        pt.offer(25);
+        pt.offer(38);
+        pt.offer(45);
+
+        while(!pt.isEmpty()) {
+            System.out.println(pt.poll());
+        }
     }
 }
