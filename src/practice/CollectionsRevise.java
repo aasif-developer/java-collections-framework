@@ -33,9 +33,44 @@ public class CollectionsRevise {
         System.out.println(li3.isEmpty());
         System.out.println("Stack :"+li3);
 
+        System.out.println("ARRAY DEQUE");
+        Queue<Integer> q = new ArrayDeque<>();
 
+        q.offer(10);
+        q.offer(20);
+        q.offer(30);
+        q.offer(40);
+        q.offer(50);
 
+        System.out.println(q);
 
+        System.out.println(q.peek());
+
+        Iterator it = li1.iterator();
+        while(it.hasNext())
+        {
+            System.out.println(it.next());
+        }
+
+        //ITERATING ELEMENTS ON QUEUE
+
+        while(!q.isEmpty())
+        {
+            System.out.println(q.poll());
+        }
+
+        //ITERATING BOTH SIDES
+
+        ListIterator<Integer> lit = li.listIterator();
+        while(lit.hasNext())
+        {
+            lit.next();
+        }
+
+        while(lit.hasPrevious())
+        {
+            System.out.println(lit.previous());
+        }
 
     }
 }
