@@ -1,9 +1,7 @@
 package practice;
 import java.util.*;
-import java.util.ArrayList;
 public class CollectionsRevise {
     public static void main(String[] args) {
-
         List<Integer> li = new ArrayList<>();
 
         List<String> li1=new LinkedList<>();
@@ -51,16 +49,13 @@ public class CollectionsRevise {
         {
             System.out.println(it.next());
         }
-
         //ITERATING ELEMENTS ON QUEUE
 
         while(!q.isEmpty())
         {
             System.out.println(q.poll());
         }
-
         //ITERATING BOTH SIDES
-
         ListIterator<Integer> lit = li.listIterator();
         while(lit.hasNext())
         {
@@ -71,8 +66,6 @@ public class CollectionsRevise {
         {
             System.out.println(lit.previous());
         }
-
-
         //even priority
 
         Comparator<Integer> comp = (a,b)->
@@ -94,7 +87,6 @@ public class CollectionsRevise {
         pt.offer(25);
         pt.offer(38);
         pt.offer(45);
-
         while(!pt.isEmpty()) {
             System.out.println(pt.poll());
         }
