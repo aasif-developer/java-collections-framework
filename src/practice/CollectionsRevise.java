@@ -90,5 +90,18 @@ public class CollectionsRevise {
         while(!pt.isEmpty()) {
             System.out.println(pt.poll());
         }
+
+        Stack<Integer> st = new Stack<>();
+
+        st.add(1);
+        st.add(2);
+        st.add(3);
+        System.out.println(st);
+
+        Integer a= st.peek();
+        System.out.println(a);
+
+        st.remove(Integer.valueOf(2));
+        System.out.println(st);
     }
 }
