@@ -97,6 +97,7 @@ public class CollectionsRevise {
         st.add(2);
         st.add(3);
         System.out.println(st);
+        st.remove(1);
 
         Integer a= st.peek();
         System.out.println(a);
