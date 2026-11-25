@@ -117,6 +117,19 @@ public class CollectionsRevise {
         {
             System.out.println(qt.poll());
         }
+
+        Comparator<Integer> ct1 = (a11,b11)-> Integer.compare(b11,a11);
+        Queue<Integer> qt1 = new PriorityQueue<>(ct1);
+
+        qt1.offer(70);
+        qt1.offer(100);
+        qt1.offer(35);
+        qt1.offer(20);
+        System.out.println("ASCENDING ORDER");
+        while(!qt1.isEmpty())
+        {
+            System.out.println(qt1.poll());
+        }
     }
 
 
