@@ -104,5 +104,24 @@ public class CollectionsRevise {
 
         st.remove(Integer.valueOf(2));
         System.out.println(st);
+
+
+        //ascending order priority
+
+        Comparator<Integer> ct = (a1,b1)-> Integer.compare(a1,b1);
+        Queue<Integer> qt = new PriorityQueue<>(ct);
+
+        qt.offer(70);
+        qt.offer(100);
+        qt.offer(35);
+        qt.offer(20);
+        System.out.println("ASCENDING ORDER");
+        while(!qt.isEmpty())
+        {
+            System.out.println(qt.poll());
+        }
+
     }
+
+
 }
